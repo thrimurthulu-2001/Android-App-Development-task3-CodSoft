@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock App</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <div id="current-time"></div>
+        <form id="alarm-form">
+            <label for="alarm-time">Set Alarm:</label>
+            <input type="time" id="alarm-time" required>
+            <label for="alarm-tone">Choose Alarm Tone:</label>
+            <select id="alarm-tone">
+                <option value="sounds/alarm1.mp3">Alarm 1</option>
+                <option value="sounds/alarm2.mp3">Alarm 2</option>
+            </select>
+            <button type="submit">Set Alarm</button>
+        </form>
+        <h2>Set Alarms</h2>
+        <ul id="alarm-list"></ul>
+    </div>
+    <audio id="alarm-sound" src=""></audio>
+    <script src="task3.js"></script>
+</body>
+</html>
